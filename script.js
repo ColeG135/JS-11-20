@@ -8,11 +8,29 @@ function firstLast6(arr) {
     return false;
 }
     
-function has_23(arr, n) {
-    return arr;
+function has_23(arr) {
+    if ((arr[0] == 2) || (arr[1] == 2)) {
+        return true;
+    }
+    if ((arr[0] == 3) || (arr[1] == 3)) {
+        return true;
+    }
+    return false;
 }
 
-function fix_23(arr, n) {
+function fix_23(arr) {
+    if (arr[0] == 2) {
+        if (arr[1] ==3) {
+            arr[1] = 0;
+            return arr;
+        }
+    }
+    if (arr[1] == 2) {
+        if (arr[2] == 3) {
+            arr[2] = 0;
+            return arr;
+        }
+    }
     return arr;
 }
 
