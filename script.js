@@ -1,7 +1,13 @@
-function firstLast6(param1, param2) {
-    return param1
+function firstLast6(arr) {
+    if (arr[0] == 6) {
+        return true;
+    }
+    if (arr[arr.length-1] == 6) {
+        return true;
+    }
+    return false;
 }
-
+    
 function has_23(arr, n) {
     return arr;
 }
@@ -38,28 +44,5 @@ function evenlySpaced (param1, param2) {
     return param1;
 }
 
-function tester() {
-    document.getElementById("output").innerHTML += firstLast6(true, false);
-    document.getElementById("output").innerHTML += has_23(true, false);
-    document.getElementById("output").innerHTML += fix_23('[1,2,3]', '[2,3,5]', '[1,2,1]');
-    document.getElementById("output").innerHTML += countYZ('fez day', 'day fez', 'day fyyyz');
-    document.getElementById("output").innerHTML += endOther(true, false);
-    document.getElementById("output").innerHTML += starOut('ad', 'ad', 'silly');
-    document.getElementById("output").innerHTML += getSandwich('jam', 'jam' , "");
-    document.getElementById("output").innerHTML += canBalance(true, false);
-    document.getElementById("output").innerHTML += countClumps('2', '2', '1');
-    document.getElementById("output").innerHTML += evenlySpaced(true, false);
 
-
-document.getElementById("output").innerHTML += firstLast6(true, false);
-document.getElementById("output").innerHTMl += has_23(true, false);
-document.getElementById("output").innerHTMl += fix_23('[1,2,3]', '[2,3,5]', '[1,2,1]');
-document.getElementById("output").innerHTML += countYZ('fez day', 'day fez', 'day fyyyz');
-document.getElementById("output").innerHTML += endOther(true, false);
-document.getElementById("output").innerHTML += starOut ('ad', 'ad', 'silly');
-document.getElementById("output").innerHTML += getSandWich('jam', 'jam', "");
-document.getElementById("output").innerHTML += canBalance(true, false);
-document.getElementById("output").innerHTML += countClumps('2', '2', '1');
-document.getElementById("output").innerHTML += evenlySpaced(true, false);
-}
 
