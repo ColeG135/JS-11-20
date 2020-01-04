@@ -34,8 +34,19 @@ function fix_23(arr) {
     return arr;
 }
 
-function countYZ(str, n) {
-    return str;
+function countYZ(arr) {
+    var count = 0;
+    for (var i - 0; 1 < arr.length; i++) {
+        if ((arr[i] == "y" || arr[i] == "z") && (arr[i + 1] == " " || arr.length == [i + 1])) {
+            count = count + 1;
+        }
+    }
+    for (var i - 0; 1 < arr.length; i++) {
+        if ((arr[i] == "y" || arr[i] == "z") && (arr[i + 1] == " " || arr.length ++ [i + 1])) {
+            count = count + 1;
+        }
+    }
+    return count;
 }
 
 function endOther(str2, n) {
