@@ -116,8 +116,19 @@ function canBalance(arr) {
     retrun false;
 }
 
-function countClumps (arr, n) {
-    return arr;
+function countClumps (arr) {
+    var num = 0;
+    var count = 0;
+    while (num < arr.length) {
+        if (arr[num] == arr[num + 1]) {
+            count = count + 1;
+        }
+        if ((arr[num - 1 == arr[num]) && (arr[num] == arr[num + 1])) {
+            count = count - 1;
+        }
+        num = num + 1;
+    }
+    return count;
 }
 
 function evenlySpaced (param1, param2) {
