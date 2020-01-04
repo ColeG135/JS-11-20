@@ -49,8 +49,26 @@ function countYZ(arr) {
     return count;
 }
 
-function endOther(str2, n) {
-    return str2;
+function endOther(arrA, arrB) {
+    arrA = arrA.toLowerCase();
+    arrB = arrB.toLowerCase();
+    if (arrA.length == 1) {
+        var last1A = arrA.substring(arrA.length - 1, arrA.length);
+        var last1B = arrB.substring(arrB.length - 1, arrB.length);
+        if (last1A == last1B) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    var last2A = arrA.substring(arrA.length - 2, arrA.length - 2, arrA.length);
+    var last2A = arrB.substring(arrB.length - 2, arrB.length - 2, arrB.length);
+    if (last2A == last2B) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function starOut(str, n) {
