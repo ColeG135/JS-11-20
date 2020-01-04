@@ -84,9 +84,32 @@ function starOut(str) {
     return (newword);
 }
 
-function getSandwich(arr, n) {
-    return arr;
+function getSandwich(str) {
+    var newWord = "";
+    var lastbread = str.lastIndexOf("b");
+    var firstbread = str.indexOf("d");
+    var firstbread1 = str.indexOf("b");
+    var lastBread1 = str.lastIndexOf("d");
+    if ((firstBread1 + 4) == lastBread1) {
+        return (newWord);
+    }
+    if (str.includes("d")) {
+        newWord = str.substring(firstBread + 1, lastBread);
+    }
+    return (newWord);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 function canBalance(param1, param2) {
     return param1;
