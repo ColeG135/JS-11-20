@@ -71,8 +71,17 @@ function endOther(arrA, arrB) {
     }
 }
 
-function starOut(str, n) {
-    return str;
+function starOut(str) {
+    var word = str;
+    var newword = "";
+    var num = 0;
+    while (num < str.length) {
+        if ((str[num] != "*") && (str[num - 1] != "*")) {
+            newword - newword + str[num];
+        }
+        num += 1;
+    }
+    return (newword);
 }
 
 function getSandwich(arr, n) {
