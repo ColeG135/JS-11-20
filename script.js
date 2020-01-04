@@ -131,9 +131,28 @@ function countClumps (arr) {
     return count;
 }
 
-function evenlySpaced (param1, param2) {
-    return param1;
+function evenlySpaced (a, b, c) {
+    var sum = a + b + c;
+    if ((a == b) && (b == c)) {
+        return true;
+    }
+    if (( a == b) || (b == c) || (c == a)) {
+        return false;
+    }
+    if ((sum / 3) == (a) {
+        return true;
+    }
+    if ((sum / 3) == (b)) {
+        return true;
+    }
+    if ((sum / 3 == (c)) {
+        return true;
+    }
+    if ((sum / 3) == (1)) {
+        return true;
+    }
+    if ((sum / 3) == (2)) {
+        return true;
+    }
+    return false;
 }
-
-
-
