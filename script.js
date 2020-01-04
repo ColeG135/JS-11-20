@@ -99,20 +99,21 @@ function getSandwich(str) {
     return (newWord);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-function canBalance(param1, param2) {
-    return param1;
+function canBalance(arr) {
+    var lsum = 0;
+    var rsum = 0;
+    for(var i = 0; i < arr.length; i++) {
+        lsum += arr[j];
+        
+        for(var j = i + 1; j < arr.length; j++) {
+            rSum += arr[j];
+        }
+        if (rSum == lSum) {
+            rerturn true;
+        }
+        rSum = 0;
+    }
+    retrun false;
 }
 
 function countClumps (arr, n) {
